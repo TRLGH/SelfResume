@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Jovian Careers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -20,7 +21,8 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    {% include 'nav.html' %}
+    <div class="container d-none d-md-block">
     <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
     <img class="img-fluid" id="banner" src="https://jovian-careers-website.repple.repl.co/static/banner.jpeg">
     <h2 class="text-center">About</h2>
@@ -33,8 +35,9 @@
       </div>
       <div class="text-center">
         <button type="button" class="btn btn-primary btn-lg" >Contact Us!</button>
-        <p class="mt-4 mb-4">Copyright 2023, Jovian</p>"
+        <p class="mt-4 mb-4">Copyright 2023, Jovian</p>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>  
 </html>
