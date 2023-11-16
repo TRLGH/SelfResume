@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project - {{projects.about}}</title>
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <div class="container d-none d-md-block">
+      <h1 class="text-center mt-2 mb-4"></h1>
+      
+      <h3>Self Resume</h3>
+      <p>{{projects.about}}</p>
+      <h3>Inspiration</h3>
+      <p>{{projects.inspires}}</p>
+      <h3>Sources</h3>
+      <p>{{projects.sources}}</p>
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
